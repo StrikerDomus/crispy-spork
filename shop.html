@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop - Artifex Domus</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<header>
+    <h1>Artifex Domus</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="shop.html">Shop</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+<div class="container">
+    <h2>Online Shop</h2>
+    <div class="gallery">
+        <div class="product">
+            <h3>Rustic Chair</h3>
+            <p>$120</p>
+            <button onclick="addToCart('Rustic Chair', 120)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <h3>Modern Table</h3>
+            <p>$250</p>
+            <button onclick="addToCart('Modern Table', 250)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <h3>Custom Sofa</h3>
+            <p>$500</p>
+            <button onclick="addToCart('Custom Sofa', 500)">Add to Cart</button>
+        </div>
+    </div>
+    <h2>Your Cart</h2>
+    <div id="cart"></div>
+    <button onclick="displayCart()">View Cart</button>
+</div>
+<footer>
+    <p>&copy; 2025 Artifex Domus. All rights reserved.</p>
+</footer>
+</body>
+</html>
